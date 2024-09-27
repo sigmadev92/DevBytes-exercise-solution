@@ -51,10 +51,10 @@ for key in day2_record:
 
 # we have got loyal customers for each day. Now only those customers will be termed as loyal who are common in both days
 loyal_customers = [] #those customers who visited atleast 2 unique pages for both days  : Required result
-for i in range(len(day1_loyal_customers)):
-    for j in range(i+1,len(day2_loyal_customers)):
-        if(day1_loyal_customers[i] == day2_loyal_customers[j]):
-             loyal_customers.append(day1_loyal_customers[i])
+for i in day1_loyal_customers:
+    for j in day2_loyal_customers:
+        if(i== j):
+             loyal_customers.append(i)
              break
         
 # print(loyal_customers)
